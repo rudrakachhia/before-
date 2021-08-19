@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Before & After pseudo selecter</title>
+	<link rel="stylesheet" href="link rel="preconnect href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+	<style>
+		*{
+			color: white;
+		}
+		body {
+			font-family: 'Baloo 2', cursive;;
+			background: url(https://source.unsplash.com/random) no-repeat center/cover;
+			margin: 0%;
+			padding: 0%;
+			background-color: black;
+			color: white;
+		}
+		header::before{
+			background: url(https://source.unsplash.com/random) no-repeat center/cover;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			opacity: 0.1;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			content: "";
+		}
+
+		section {
+			align-items: center;
+			height: 344px;
+			justify-content: center;
+			margin: -96px 23px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.navigation {
+			font-size: 20px;
+			display: flex;
+		}
+
+		li {
+			list-style: none;
+			padding: 6px 29px;
+		}
+
+		/* section::before {
+			content: "This is a counter"
+		} */
+
+		h3 {
+			font-size: 2rem;
+		}
+		.navebar ul li a:hover{
+			color: rgb(250, 182, 182);
+			text-decoration: underline;
+			font-size: 25px;
+		}
+		a{
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav class="navebar">
+			<ul class="navigation">
+				<li class="item"><a href="#">Home</a></li>
+				<li class="item"><a href="index.html">Website 1</a></li>
+				<li class="item"><a href="per1.html">Website 2</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h3>
+			Welcome to Coading World
+		</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellendus aspernatur. Eius,
+			ipsa ad temporibus officia modi sunt commodi odit. Sequi dicta harum nam</p>
+	</section>
+	<hr>
+</body>
+
+</html>
